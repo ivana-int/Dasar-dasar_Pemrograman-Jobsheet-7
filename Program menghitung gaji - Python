@@ -1,0 +1,56 @@
+nama = str(input("Masukan Nama : "))
+
+print ("1. A \n2. B \n3. C \n4. D")
+
+gol=input("Masukan Golongan \t: ")
+
+jam = int(input("Masukan jam Kerja : "))
+
+gaji = 3000000
+
+
+##Menghitung Golongan Jabatan
+
+if gol == "A":
+
+    upah =0.05*gaji;
+
+elif gol == "B":
+
+    upah =0.10*gaji;
+
+elif gol == "C":
+
+    upah =0.15*gaji;
+elif gol == "D":
+
+    upah =0.20*gaji;
+else:
+
+    upah =0;
+    
+
+#menghitung rumus
+
+if jam > 8:
+
+    lembur = jam - 8
+
+    hlembur = lembur * 5000
+
+
+print ("")
+
+print ("\t\t\t Hitung Gaji Karyawan")
+
+print ("\n")
+
+print ("Nama \t\t\t\t: ",nama)
+
+print ("Jumlah Jam Kerja \t\t: ",jam)
+
+print ("Golongan Kerja \t\t\t: ",gol)
+
+print ("Gaji Pokok \t\t\t: ",gaji)
+
+print ("Honor Lembur \t\t\t: ",hlembur)
