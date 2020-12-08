@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+ char nama[32],gol;
+   float jam,upah;
+
+   printf("Masukkan nama karyawan: ");
+   scanf("%s",&nama);fflush(stdin);
+   printf("Masukkan golongan karyawan(A-D): ");
+   scanf("%c",&gol);fflush(stdin);
+   printf("Masukkan jam kerja dalam seminggu: ");
+   scanf("%f",&jam);fflush(stdin);
+
+   switch(gol)
+   {
+    case 'A':if(jam>48){
+         upah=(jam-48)*5000+(48*50000);
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }else{
+               upah=jam*50000;
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }
+      case 'B':if(jam>48){
+         upah=(jam-48)*5000+(48*70000);
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }else{
+               upah=jam*70000;
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }
+      case 'C':if(jam>48){
+         upah=(jam-48)*5000+(48*80000);
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }else{
+               upah=jam*80000;
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }
+      case 'D':if(jam>48){
+         upah=(jam-48)*5000+(48*100000);
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }else{
+               upah=jam*100000;
+               printf("Upah untuk %s sebesar Rp%0.f",nama,upah);break;
+               }
+      default:printf("Golongan tidak ada");
+      }
+
+   getch();
+}
